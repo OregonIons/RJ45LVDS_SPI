@@ -78,7 +78,7 @@
 <text x="11.0998" y="60.9727" size="0.8128" layer="21" font="vector" ratio="10" rot="R90">ARTIQ LVDS to 
   SPI breakout v1.0
 NIST/DTCA/DHS 4/2017</text>
-<text x="37.4396" y="73.1266" size="1.27" layer="21" font="vector" ratio="13">+4-6V</text>
+<text x="38.989" y="72.898" size="1.778" layer="21" font="vector" ratio="13">+5V</text>
 <text x="45.085" y="72.9615" size="1.778" layer="21" font="vector" ratio="13">GND</text>
 <text x="60.4012" y="35.1028" size="1.016" layer="21" font="vector" ratio="10">SS</text>
 <text x="60.1726" y="37.465" size="1.016" layer="21" font="vector" ratio="10">MISO</text>
