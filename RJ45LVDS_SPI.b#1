@@ -1987,7 +1987,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <via x="56.515" y="60.5536" extent="1-16" drill="0.3556"/>
 <via x="54.991" y="49.3776" extent="1-16" drill="0.3556"/>
 <via x="55.4482" y="35.2552" extent="1-16" drill="0.3556"/>
-<via x="-3.048" y="68.2752" extent="1-16" drill="0.3556"/>
+<via x="-7.2136" y="69.2404" extent="1-16" drill="0.3556"/>
 <via x="-15.2146" y="67.2084" extent="1-16" drill="0.3556"/>
 <via x="-10.6172" y="66.1924" extent="1-16" drill="0.3556"/>
 <via x="28.702" y="48.4632" extent="1-16" drill="0.3556"/>
@@ -2136,7 +2136,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="-14.6812" y1="60.6806" x2="-18.8722" y2="57.3278" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.2146" y1="67.2084" x2="-14.6812" y2="60.6806" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.6172" y1="66.1924" x2="-15.2146" y2="67.2084" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.048" y1="68.2752" x2="-10.6172" y2="66.1924" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.2136" y1="69.2404" x2="-10.6172" y2="66.1924" width="0" layer="19" extent="1-1"/>
 <wire x1="21.5646" y1="49.1998" x2="22.225" y2="56.0634" width="0" layer="19" extent="1-1"/>
 <wire x1="23.9268" y1="49.3522" x2="21.5646" y2="49.1998" width="0" layer="19" extent="1-1"/>
 <wire x1="22.987" y1="47.1424" x2="23.9268" y2="49.3522" width="0" layer="19" extent="1-1"/>
