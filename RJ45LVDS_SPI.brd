@@ -1755,7 +1755,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="23.6855" y="60.198" size="1.27" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="20.955" y="59.69" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U9" library="dds-boards" package="SOT223" value="MIC37100" x="44.3992" y="65.2145" smashed="yes" rot="R270">
+<element name="U9" library="dds-boards" package="SOT223" value="MIC39100-3.3WS" x="44.3992" y="65.2145" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.9095" y="63.1444" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="43.0784" y="67.7545" size="1.27" layer="27" rot="R270"/>
 </element>
@@ -1832,7 +1832,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="SJ13" library="jumper" package="SJ" value="" x="35.9918" y="74.295" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="35.5917" y="74.295" size="0.02" layer="28" rot="MR0"/>
 </element>
-<element name="R5" library="rcl-dhs" package="R0603" value="100" x="29.9212" y="74.2696"/>
+<element name="R5" library="rcl-dhs" package="R0603" value="750" x="29.9212" y="74.2696"/>
 </elements>
 <signals>
 <signal name="IN4_P" class="1">

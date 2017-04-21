@@ -6851,7 +6851,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R3" library="rcl-dhs" deviceset="R-US_" device="R0603" value="100"/>
 <part name="R4" library="rcl-dhs" deviceset="R-US_" device="R0603" value="100"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="U9" library="dds-boards" deviceset="MIC37100" device=""/>
+<part name="U9" library="dds-boards" deviceset="MIC37100" device="" value="MIC39100-3.3WS"/>
 <part name="SUPPLY31" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="C8" library="rcl-dhs" deviceset="C-US" device="C0603" value=".1u"/>
@@ -6890,7 +6890,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SJ13" library="jumper" deviceset="SJ" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="R5" library="rcl-dhs" deviceset="R-US_" device="R0603" value="100"/>
+<part name="R5" library="rcl-dhs" deviceset="R-US_" device="R0603" value="750"/>
 </parts>
 <sheets>
 <sheet>
