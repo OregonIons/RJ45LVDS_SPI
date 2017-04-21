@@ -6890,6 +6890,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C16" library="rcl-dhs" deviceset="C-US" device="C1206K" value="10u"/>
 <part name="SJ12" library="jumper" deviceset="SJ" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
+<part name="SJ13" library="jumper" deviceset="SJ" device=""/>
+<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
+<part name="R5" library="rcl-dhs" deviceset="R-US_" device="R0603" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -6901,7 +6904,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="U2" gate="G$1" x="-33.02" y="68.58" rot="R180"/>
 <instance part="U3" gate="G$1" x="-33.02" y="38.1" rot="R180"/>
 <instance part="U4" gate="G$1" x="-33.02" y="7.62" rot="R180"/>
-<instance part="SUPPLY1" gate="GND" x="-83.82" y="38.1"/>
+<instance part="SUPPLY1" gate="GND" x="-83.82" y="30.48"/>
 <instance part="SUPPLY2" gate="GND" x="7.62" y="109.22" rot="R90"/>
 <instance part="SUPPLY3" gate="GND" x="10.16" y="78.74" rot="R90"/>
 <instance part="SUPPLY4" gate="GND" x="10.16" y="48.26" rot="R90"/>
@@ -6965,6 +6968,9 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C16" gate="G$1" x="162.56" y="88.9"/>
 <instance part="SJ12" gate="1" x="30.48" y="149.86"/>
 <instance part="SUPPLY8" gate="GND" x="162.56" y="78.74"/>
+<instance part="SJ13" gate="1" x="-139.7" y="68.58"/>
+<instance part="+3V5" gate="G$1" x="-152.4" y="81.28"/>
+<instance part="R5" gate="G$1" x="-127" y="68.58" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7069,7 +7075,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="-83.82" y1="40.64" x2="-83.82" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="33.02" x2="-83.82" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -7159,9 +7165,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GRN+"/>
-<wire x1="-93.98" y1="73.66" x2="-104.14" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="73.66" x2="-104.14" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="YEL-"/>
 <wire x1="-104.14" y1="71.12" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="63.5" x2="-104.14" y2="60.96" width="0.1524" layer="91"/>
@@ -7171,7 +7174,6 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="-104.14" y="63.5"/>
 <pinref part="J1" gate="G$1" pin="GRN-"/>
 <wire x1="-93.98" y1="71.12" x2="-104.14" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-104.14" y="71.12"/>
 <pinref part="SUPPLY28" gate="GND" pin="GND"/>
 <junction x="-104.14" y="60.96"/>
 </segment>
@@ -7378,6 +7380,12 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 <wire x1="157.48" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
 <junction x="157.48" y="114.3"/>
+</segment>
+<segment>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="-152.4" y1="78.74" x2="-152.4" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="SJ13" gate="1" pin="1"/>
+<wire x1="-152.4" y1="68.58" x2="-144.78" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3_33" class="0">
@@ -7665,9 +7673,57 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="25.4" y1="147.32" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="SJ13" gate="1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-134.62" y1="68.58" x2="-132.08" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="GRN+"/>
+<wire x1="-93.98" y1="73.66" x2="-116.84" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="73.66" x2="-116.84" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-116.84" y1="68.58" x2="-121.92" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,48.26,104.14,U5,VCCA,+3V3,,,"/>
+<approved hash="104,1,104.14,104.14,U5,VCCB,N$12,,,"/>
+<approved hash="104,1,48.26,78.74,U6,VCCA,+3V3,,,"/>
+<approved hash="104,1,104.14,78.74,U6,VCCB,N$12,,,"/>
+<approved hash="104,1,48.26,50.8,U7,VCCA,+3V3,,,"/>
+<approved hash="104,1,104.14,50.8,U7,VCCB,N$12,,,"/>
+<approved hash="104,1,48.26,22.86,U8,VCCA,+3V3,,,"/>
+<approved hash="104,1,104.14,22.86,U8,VCCB,N$12,,,"/>
+<approved hash="110,1,-2.54,38.1,3_33,+3V3,,,,"/>
+<approved hash="110,1,-5.08,7.62,4_33,+3V3,,,,"/>
+<approved hash="110,1,-2.54,68.58,2_33,+3V3,,,,"/>
+<approved hash="110,1,-5.08,99.06,1_33,+3V3,,,,"/>
+<approved hash="111,1,-5.08,99.06,1_33,,,,,"/>
+<approved hash="111,1,-2.54,68.58,2_33,,,,,"/>
+<approved hash="111,1,-2.54,38.1,3_33,,,,,"/>
+<approved hash="111,1,-5.08,7.62,4_33,,,,,"/>
+<approved hash="113,1,-6.02137,104.14,SJ1,,,,,"/>
+<approved hash="113,1,-3.48137,73.66,SJ2,,,,,"/>
+<approved hash="113,1,-3.48137,43.18,SJ3,,,,,"/>
+<approved hash="113,1,-6.02137,12.7,SJ4,,,,,"/>
+<approved hash="113,1,113.359,101.6,SJ5,,,,,"/>
+<approved hash="113,1,115.899,76.2,SJ6,,,,,"/>
+<approved hash="113,1,115.899,48.26,SJ7,,,,,"/>
+<approved hash="113,1,115.899,20.32,SJ8,,,,,"/>
+<approved hash="113,1,147.32,115.816,SJ9,,,,,"/>
+<approved hash="113,1,147.32,108.196,SJ10,,,,,"/>
+<approved hash="113,1,147.32,100.576,SJ11,,,,,"/>
+<approved hash="113,1,161.248,54.7412,JP1,,,,,"/>
+<approved hash="113,1,178.037,109.351,JP2,,,,,"/>
+<approved hash="113,1,30.48,151.376,SJ12,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
