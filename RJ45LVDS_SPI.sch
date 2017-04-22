@@ -6888,7 +6888,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C16" library="rcl-dhs" deviceset="C-US" device="C1206K" value="10u"/>
 <part name="SJ12" library="jumper" deviceset="SJ" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
-<part name="SJ13" library="jumper" deviceset="SJ" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="R5" library="rcl-dhs" deviceset="R-US_" device="R0603" value="750"/>
 </parts>
@@ -6964,7 +6963,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C16" gate="G$1" x="162.56" y="88.9"/>
 <instance part="SJ12" gate="1" x="30.48" y="149.86"/>
 <instance part="SUPPLY8" gate="GND" x="162.56" y="78.74"/>
-<instance part="SJ13" gate="1" x="-139.7" y="68.58"/>
 <instance part="+3V5" gate="G$1" x="-152.4" y="81.28"/>
 <instance part="R5" gate="G$1" x="-127" y="68.58" rot="R180"/>
 </instances>
@@ -7376,8 +7374,8 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="-152.4" y1="78.74" x2="-152.4" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="SJ13" gate="1" pin="1"/>
-<wire x1="-152.4" y1="68.58" x2="-144.78" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-152.4" y1="68.58" x2="-132.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3_33" class="0">
@@ -7661,13 +7659,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="SJ12" gate="1" pin="1"/>
 <wire x1="20.32" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="147.32" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="SJ13" gate="1" pin="2"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="-134.62" y1="68.58" x2="-132.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
