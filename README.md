@@ -51,8 +51,5 @@ Single-ended digital interface
 TODO
 ====
 
-- Add mounting holes
-- Provide panel cutout drawing
-- Create BOM
+- Create panel cutout drawing
 - Tidy schematic
-- Sprinkle ground vias
