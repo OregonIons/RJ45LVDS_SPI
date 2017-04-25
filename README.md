@@ -52,4 +52,4 @@ TODO
 ====
 
 - Create panel cutout drawing
-- Tidy schematic
+
