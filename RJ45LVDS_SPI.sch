@@ -14389,6 +14389,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="R5" library="rcl-dhs" deviceset="R-US_" device="R0603" value="750"/>
 <part name="C11" library="rcl-dhs" deviceset="C-US" device="C0603" value=".1u"/>
+<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14465,6 +14466,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="+3V5" gate="G$1" x="-152.4" y="81.28"/>
 <instance part="R5" gate="G$1" x="-127" y="68.58" rot="R180"/>
 <instance part="C11" gate="G$1" x="-33.02" y="149.86"/>
+<instance part="SUPPLY9" gate="GND" x="172.72" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -14741,6 +14743,14 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="C16" gate="G$1" pin="-"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <wire x1="162.56" y1="83.82" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="177.8" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="106.68" x2="170.18" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<wire x1="170.18" y1="99.06" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="99.06" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -15147,12 +15157,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="152.4" y1="96.52" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="96.52" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="167.64" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="+"/>
 <wire x1="162.56" y1="96.52" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 <junction x="162.56" y="96.52"/>
+<pinref part="JP2" gate="A" pin="4"/>
+<wire x1="177.8" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="104.14" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
