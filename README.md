@@ -16,8 +16,8 @@ or
 2. Apply unregulated power to UNREG pin and enable the regulator by soldering REG_EN jumper.
 
 - The default regulator is a MIC39100-3.3WS which requires an UNREG input voltage between 3.7 and 16V.  [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/mic39100.pdf)
-- When applying unregulated power, the 3.3V regulated power becomes an output that can be used to power other things, such as an SPI device. The MIC39100-3.3WS is capable of providing 1A (minus the current required by the board). 
-- Soldering the LED enable jumper ‘LED_EN’ makes the green LED on the RJ45 jack act as a power indicator.
+- When applying unregulated power, the 3.3V pin on the power header becomes an output that can be used to power other things, such as an SPI device. The MIC39100-3.3WS is capable of providing 1A (minus the current required by the board). 
+- Adding the optional resistor R5 makes the green LED on the RJ45 jack act as a power indicator.
 
 
 Channel directions
@@ -41,10 +41,10 @@ Single-ended digital interface
 ==============================
 
 - Uses Texas Instruments SN74LVC1T45DBVR Bus Transceiver With Configurable Voltage Translation [Datasheet](http://http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf)
-- The voltage level of interface must be configured using one of the three V_LOGIC solder jumpers:
+- The voltage level of interface must be configured using one of the two V_LOGIC solder jumpers:
 1. 3.3V - uses the board’s 3.3V rail
-2. UNREG - uses voltage supplied at UNREG pin.  Must be in range 1.65-5.5V.
-3. EXT - uses voltage supplied at V_LOGIC pin.  Must be in range 1.65-5.5V.
+2. EXT - uses voltage supplied at V_LOGIC pin.  Must be in range 1.65-5.5V.
+- EXT can be supplied at 'EXT V_LOGIC' pin or the 'UNREG-EXT' jumper can be used to connect EXT to UNREG.  This would typically be done when powering the board from a regulated +5V supply.
 - Propagation delays and data rates depend on V_LOGIC voltage level.  At 3.3V though they are ~4ns and 210Mbps.
 
 
