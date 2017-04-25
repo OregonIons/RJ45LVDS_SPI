@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -57,7 +57,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
@@ -74,14 +74,17 @@
 <wire x1="7.0358" y1="37.8968" x2="51.943" y2="37.9476" width="0" layer="20"/>
 <wire x1="51.9684" y1="76.3778" x2="6.858" y2="76.2" width="0" layer="20"/>
 <wire x1="6.858" y1="76.2" x2="7.0358" y2="37.8968" width="0" layer="20"/>
-<text x="25.7175" y="73.025" size="0.8128" layer="22" font="vector" ratio="10" rot="MR0">RJ45 LVDS  breakout v1.0
-NIST/DTCA/DHS 4/2017</text>
+<text x="8.9916" y="57.6453" size="0.8128" layer="22" font="vector" ratio="10" rot="MR90">LVDS on RJ45
+to single-ended
+breakout 
+NIST/DTCA/DHS
+v1.0 4/2017</text>
 <text x="36.7792" y="38.7858" size="1.778" layer="26" rot="MR0">4</text>
 <text x="39.2938" y="38.7604" size="1.778" layer="26" rot="MR0">3</text>
 <text x="41.8846" y="38.7858" size="1.778" layer="26" rot="MR0">2</text>
 <text x="44.8056" y="38.7604" size="1.778" layer="26" rot="MR0">1</text>
 <text x="45.3898" y="40.5384" size="1.27" layer="26" rot="MR180">GND</text>
-<text x="47.625" y="42.7736" size="0.8128" layer="26" rot="MR90">UNREG</text>
+<text x="50.3428" y="63.4492" size="0.8128" layer="26" rot="MR0">UNREG-EXT</text>
 <text x="39.3954" y="45.847" size="1.27" layer="26" rot="MR90">EXT</text>
 <text x="36.0426" y="45.6946" size="1.4224" layer="26" rot="MR90">V_LOGIC</text>
 <text x="37.9222" y="50.927" size="1.27" layer="26" rot="MR90">3.3</text>
@@ -94,8 +97,8 @@ NIST/DTCA/DHS 4/2017</text>
 &lt;- OUTPUT             INPUT-&gt;</text>
 <text x="39.9034" y="69.3674" size="1.27" layer="26" rot="MR90">3.3</text>
 <text x="42.6466" y="67.945" size="0.8128" layer="26" rot="MR90">UNREG</text>
-<text x="47.625" y="68.707" size="1.016" layer="26" rot="MR90">GND</text>
-<text x="44.9072" y="67.1068" size="0.8128" layer="26" rot="MR90">EXT
+<text x="45.0088" y="68.834" size="1.016" layer="26" rot="MR90">GND</text>
+<text x="47.1678" y="67.2338" size="0.8128" layer="26" rot="MR90">EXT
 V_LOGIC</text>
 </plain>
 <libraries>
@@ -3135,7 +3138,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <via x="46.736" y="75.2348" extent="1-16" drill="0.3556"/>
 <via x="15.113" y="44.5516" extent="1-16" drill="0.3556"/>
 <via x="39.7002" y="39.5224" extent="1-16" drill="0.3556"/>
-<via x="47.3456" y="67.6402" extent="1-16" drill="0.3556"/>
+<via x="46.609" y="68.1228" extent="1-16" drill="0.3556"/>
 <via x="31.3944" y="52.1208" extent="1-16" drill="0.3556"/>
 <via x="30.7848" y="56.2864" extent="1-16" drill="0.3556"/>
 <via x="8.5598" y="48.133" extent="1-16" drill="0.3556"/>
