@@ -1,0 +1,8 @@
+tsilk - top silkscreen
+tstop - top soldermask
+tmetal - top metal
+bmetal - bottom metal
+bstop - bottom soldermask
+bsilk - bottom silkscreen
+
+drill - drill file
