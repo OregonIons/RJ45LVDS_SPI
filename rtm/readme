@@ -5,4 +5,6 @@ bmetal - bottom metal
 bstop - bottom soldermask
 bsilk - bottom silkscreen
 
+dim - dimensions
+
 drill - drill file

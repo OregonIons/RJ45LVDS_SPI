@@ -44,7 +44,7 @@ Single-ended digital interface
 - The voltage level of interface must be configured using one of the two V_LOGIC solder jumpers:
 1. 3.3V - uses the board’s 3.3V rail
 2. EXT - uses voltage supplied at V_LOGIC pin.  Must be in range 1.65-5.5V.
-- EXT can be supplied at 'EXT V_LOGIC' pin or the 'UNREG-EXT' jumper can be used to connect EXT to UNREG.  This would typically be done when powering the board from a regulated +5V supply.
+- EXT can be supplied at 'EXT V_LOGIC' pin or the 'UNREG to EXT V_LOGIC' jumper can be used to connect EXT to UNREG.  This would typically be done when powering the board from a regulated +5V supply.
 - Propagation delays and data rates depend on V_LOGIC voltage level.  At 3.3V though they are ~4ns and 210Mbps.
 
 
