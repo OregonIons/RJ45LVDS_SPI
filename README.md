@@ -51,6 +51,8 @@ Single-ended digital interface
 Release Notes
 =============
 
+v0.1 - Initial board fab run.
+v0.2 - Second board fab run. Fixed some routing errors that made v0.1 untestable.
 
 
 TODO
