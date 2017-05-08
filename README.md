@@ -48,6 +48,11 @@ Single-ended digital interface
 - Propagation delays and data rates depend on V_LOGIC voltage level.  At 3.3V though they are ~4ns and 210Mbps.
 
 
+Release Notes
+=============
+
+
+
 TODO
 ====
 
