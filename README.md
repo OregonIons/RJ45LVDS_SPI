@@ -48,6 +48,15 @@ Single-ended digital interface
 - Propagation delays and data rates depend on V_LOGIC voltage level.  At 3.3V though they are ~4ns and 210Mbps.
 
 
+RJ45 Connectors
+================
+
+Either a vertical or right-angled connector can be mounted as required. 
+The panel cutouts are the same for both and can be found in the datasheets:
+- MRJ-5481-01 (vertical): https://www.amphenolcanada.com/ProductSearch/drawings/AC/MRJ548XX1.pdf
+- MRJ-5381-01 (right-angled): https://www.amphenolcanada.com/ProductSearch/drawings/AC/MRJ53xxx1.pdf
+
+
 Release Notes
 =============
 
@@ -55,9 +64,5 @@ v0.1 - Initial board fab run.
 
 v0.2 - Second board fab run. Fixed some routing errors that made v0.1 untestable.
 
-
-TODO
-====
-
-- Create panel cutout drawing
+v0.3 - Changed the RJ45 connector to allow for both vertical and right-angled versions.  Fixed a few silscreen mistakes.
 
