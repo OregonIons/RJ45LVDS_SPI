@@ -64,5 +64,5 @@ v0.1 - Initial board fab run.
 
 v0.2 - Second board fab run. Fixed some routing errors that made v0.1 untestable.
 
-v0.3 - Changed the RJ45 connector to allow for both vertical and right-angled versions.  Fixed a few silscreen mistakes.
+v0.3 - Changed the RJ45 connector to allow for both vertical and right-angled versions.  Fixed a few silkscreen mistakes.
 
