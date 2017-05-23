@@ -132,36 +132,6 @@ Source: &lt;a href="http://www.fairchildsemi.com/ds/MO%2FMOCD207-M.pdf"&gt; Data
 <rectangle x1="-2.2606" y1="1.905" x2="-1.5494" y2="3.5306" layer="29" rot="R180"/>
 <rectangle x1="-2.159" y1="2.032" x2="-1.651" y2="3.4036" layer="31" rot="R180"/>
 </package>
-<package name="MRJ-MEGAMIX">
-<pad name="P$1" x="3.556" y="1.27" drill="0.889"/>
-<pad name="P$2" x="2.54" y="-1.27" drill="0.889"/>
-<pad name="P$3" x="1.524" y="1.27" drill="0.889"/>
-<pad name="P$4" x="0.508" y="-1.27" drill="0.889"/>
-<pad name="P$5" x="-0.508" y="1.27" drill="0.889"/>
-<pad name="P$6" x="-1.524" y="-1.27" drill="0.889"/>
-<pad name="P$7" x="-2.54" y="1.27" drill="0.889"/>
-<pad name="P$8" x="-3.556" y="-1.27" drill="0.889"/>
-<hole x="6.9469" y="3.1496" drill="3.3"/>
-<hole x="-6.9469" y="3.1496" drill="3.3"/>
-<pad name="P$12A" x="6.5532" y="5.2832" drill="0.889"/>
-<pad name="P$11A" x="4.0132" y="5.2832" drill="0.889"/>
-<pad name="P$10A" x="-4.0132" y="5.2832" drill="0.889"/>
-<pad name="P$9A" x="-6.5532" y="5.2832" drill="0.889"/>
-<wire x1="-9.779" y1="-2.794" x2="9.779" y2="-2.794" width="0.127" layer="51"/>
-<wire x1="15.1511" y1="13.0302" x2="-15.1511" y2="13.0302" width="0.127" layer="51"/>
-<pad name="P$9B" x="-6.5532" y="7.8994" drill="0.889"/>
-<pad name="P$10B" x="-4.0132" y="7.8994" drill="0.889"/>
-<pad name="P$11B" x="4.0132" y="7.8994" drill="0.889"/>
-<pad name="P$12B" x="6.5532" y="7.8994" drill="0.889"/>
-<hole x="-5.0038" y="9.271" drill="3.3"/>
-<hole x="5.0038" y="9.271" drill="3.3"/>
-<wire x1="-15.1511" y1="13.0302" x2="-15.1511" y2="6.7818" width="0.127" layer="21"/>
-<wire x1="15.1511" y1="13.0302" x2="15.1511" y2="6.7818" width="0.127" layer="21"/>
-<wire x1="-9.779" y1="-2.794" x2="-9.779" y2="6.7818" width="0.127" layer="21"/>
-<wire x1="9.779" y1="-2.794" x2="9.779" y2="6.731" width="0.127" layer="21"/>
-<wire x1="-15.1511" y1="6.7818" x2="-9.779" y2="6.7818" width="0.127" layer="21"/>
-<wire x1="9.779" y1="6.7818" x2="15.1511" y2="6.7818" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="SN65MLVD206">
@@ -180,28 +150,6 @@ Source: &lt;a href="http://www.fairchildsemi.com/ds/MO%2FMOCD207-M.pdf"&gt; Data
 <text x="-5.08" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="OVERLAPPED-RJ45-LED">
-<pin name="1A" x="10.16" y="15.24" length="middle" rot="R180"/>
-<pin name="1B" x="10.16" y="12.7" length="middle" rot="R180"/>
-<pin name="2A" x="10.16" y="7.62" length="middle" rot="R180"/>
-<pin name="2B" x="10.16" y="5.08" length="middle" rot="R180"/>
-<pin name="3A" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="3B" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="4A" x="10.16" y="-7.62" length="middle" rot="R180"/>
-<pin name="4B" x="10.16" y="-10.16" length="middle" rot="R180"/>
-<pin name="GRN-1" x="-15.24" y="15.24" length="middle"/>
-<pin name="GRN-2" x="-15.24" y="12.7" length="middle"/>
-<pin name="YEL+2" x="-15.24" y="-5.08" length="middle"/>
-<pin name="YEL-2" x="-15.24" y="-12.7" length="middle"/>
-<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-15.24" x2="5.08" y2="17.78" width="0.254" layer="94"/>
-<wire x1="5.08" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<pin name="GRN+1" x="-15.24" y="7.62" length="middle"/>
-<pin name="GRN+2" x="-15.24" y="5.08" length="middle"/>
-<pin name="YEL+1" x="-15.24" y="-2.54" length="middle"/>
-<pin name="YEL-1" x="-15.24" y="-10.16" length="middle"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SN65MLVD206" prefix="U">
@@ -219,36 +167,6 @@ Source: &lt;a href="http://www.fairchildsemi.com/ds/MO%2FMOCD207-M.pdf"&gt; Data
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="R" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MRJ" prefix="J">
-<gates>
-<gate name="G$1" symbol="OVERLAPPED-RJ45-LED" x="2.54" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="MRJ-MEGAMIX">
-<connects>
-<connect gate="G$1" pin="1A" pad="P$1"/>
-<connect gate="G$1" pin="1B" pad="P$2"/>
-<connect gate="G$1" pin="2A" pad="P$3"/>
-<connect gate="G$1" pin="2B" pad="P$6"/>
-<connect gate="G$1" pin="3A" pad="P$5"/>
-<connect gate="G$1" pin="3B" pad="P$4"/>
-<connect gate="G$1" pin="4A" pad="P$7"/>
-<connect gate="G$1" pin="4B" pad="P$8"/>
-<connect gate="G$1" pin="GRN+1" pad="P$12A"/>
-<connect gate="G$1" pin="GRN+2" pad="P$12B"/>
-<connect gate="G$1" pin="GRN-1" pad="P$11A"/>
-<connect gate="G$1" pin="GRN-2" pad="P$11B"/>
-<connect gate="G$1" pin="YEL+1" pad="P$10A"/>
-<connect gate="G$1" pin="YEL+2" pad="P$10B"/>
-<connect gate="G$1" pin="YEL-1" pad="P$9A"/>
-<connect gate="G$1" pin="YEL-2" pad="P$9B"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14297,6 +14215,84 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="RJ45LVDS_SPI">
+<description>Generated from &lt;b&gt;RJ45LVDS_SPI.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="MRJ-MEGAMIX">
+<wire x1="-9.779" y1="-2.794" x2="9.779" y2="-2.794" width="0.127" layer="51"/>
+<wire x1="15.1511" y1="13.0302" x2="-15.1511" y2="13.0302" width="0.127" layer="51"/>
+<wire x1="-15.1511" y1="13.0302" x2="-15.1511" y2="6.7818" width="0.127" layer="21"/>
+<wire x1="15.1511" y1="13.0302" x2="15.1511" y2="6.7818" width="0.127" layer="21"/>
+<wire x1="-9.779" y1="-2.794" x2="-9.779" y2="6.7818" width="0.127" layer="21"/>
+<wire x1="9.779" y1="-2.794" x2="9.779" y2="6.731" width="0.127" layer="21"/>
+<wire x1="-15.1511" y1="6.7818" x2="-9.779" y2="6.7818" width="0.127" layer="21"/>
+<wire x1="9.779" y1="6.7818" x2="15.1511" y2="6.7818" width="0.127" layer="21"/>
+<pad name="P$1" x="3.556" y="1.27" drill="0.889"/>
+<pad name="P$2" x="2.54" y="-1.27" drill="0.889"/>
+<pad name="P$3" x="1.524" y="1.27" drill="0.889"/>
+<pad name="P$4" x="0.508" y="-1.27" drill="0.889"/>
+<pad name="P$5" x="-0.508" y="1.27" drill="0.889"/>
+<pad name="P$6" x="-1.524" y="-1.27" drill="0.889"/>
+<pad name="P$7" x="-2.54" y="1.27" drill="0.889"/>
+<pad name="P$8" x="-3.556" y="-1.27" drill="0.889"/>
+<pad name="P$9A" x="-6.5532" y="5.2832" drill="0.889"/>
+<pad name="P$10A" x="-4.0132" y="5.2832" drill="0.889"/>
+<pad name="P$11A" x="4.0132" y="5.2832" drill="0.889"/>
+<pad name="P$12A" x="6.5532" y="5.2832" drill="0.889"/>
+<hole x="-5.0038" y="9.271" drill="3.3"/>
+<hole x="5.0038" y="9.271" drill="3.3"/>
+</package>
+</packages>
+<symbols>
+<symbol name="OVERLAPPED-RJ45-LED">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<pin name="1A" x="10.16" y="15.24" length="middle" rot="R180"/>
+<pin name="1B" x="10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="2A" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="2B" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="3A" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="3B" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="4A" x="10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="4B" x="10.16" y="-10.16" length="middle" rot="R180"/>
+<pin name="GRN+" x="-15.24" y="7.62" length="middle"/>
+<pin name="GRN-" x="-15.24" y="15.24" length="middle"/>
+<pin name="YEL+" x="-15.24" y="-2.54" length="middle"/>
+<pin name="YEL-" x="-15.24" y="-10.16" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MRJ" prefix="J">
+<gates>
+<gate name="G$1" symbol="OVERLAPPED-RJ45-LED" x="2.54" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="MRJ-MEGAMIX">
+<connects>
+<connect gate="G$1" pin="1A" pad="P$1"/>
+<connect gate="G$1" pin="1B" pad="P$2"/>
+<connect gate="G$1" pin="2A" pad="P$3"/>
+<connect gate="G$1" pin="2B" pad="P$6"/>
+<connect gate="G$1" pin="3A" pad="P$5"/>
+<connect gate="G$1" pin="3B" pad="P$4"/>
+<connect gate="G$1" pin="4A" pad="P$7"/>
+<connect gate="G$1" pin="4B" pad="P$8"/>
+<connect gate="G$1" pin="GRN+" pad="P$12A"/>
+<connect gate="G$1" pin="GRN-" pad="P$11A"/>
+<connect gate="G$1" pin="YEL+" pad="P$10A"/>
+<connect gate="G$1" pin="YEL-" pad="P$9A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14388,7 +14384,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="VCC3" library="supply1" deviceset="VCCIO" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="J2" library="artiq-ttl" deviceset="MRJ" device=""/>
+<part name="J1" library="RJ45LVDS_SPI" deviceset="MRJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14470,7 +14466,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="VCC3" gate="G$1" x="137.16" y="127"/>
 <instance part="+3V8" gate="G$1" x="40.64" y="160.02"/>
 <instance part="+3V9" gate="G$1" x="114.3" y="127"/>
-<instance part="J2" gate="G$1" x="-78.74" y="58.42"/>
+<instance part="J1" gate="G$1" x="-78.74" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -14484,7 +14480,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-55.88" y1="50.8" x2="-68.58" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <junction x="-55.88" y="43.18"/>
-<pinref part="J2" gate="G$1" pin="4A"/>
+<pinref part="J1" gate="G$1" pin="4A"/>
 </segment>
 </net>
 <net name="IN3_P" class="1">
@@ -14495,7 +14491,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="45.72" x2="-43.18" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-43.18" y="45.72"/>
-<pinref part="J2" gate="G$1" pin="3A"/>
+<pinref part="J1" gate="G$1" pin="3A"/>
 </segment>
 </net>
 <net name="IN2_P" class="1">
@@ -14506,7 +14502,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-53.34" y1="66.04" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <junction x="-53.34" y="66.04"/>
-<pinref part="J2" gate="G$1" pin="2A"/>
+<pinref part="J1" gate="G$1" pin="2A"/>
 </segment>
 </net>
 <net name="IN1_P" class="1">
@@ -14519,7 +14515,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-66.04" y1="81.28" x2="-66.04" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-66.04" y="81.28"/>
-<pinref part="J2" gate="G$1" pin="1A"/>
+<pinref part="J1" gate="G$1" pin="1A"/>
 </segment>
 </net>
 <net name="IN1_N" class="1">
@@ -14532,7 +14528,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <junction x="-55.88" y="81.28"/>
 <wire x1="-68.58" y1="71.12" x2="-55.88" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1B"/>
+<pinref part="J1" gate="G$1" pin="1B"/>
 </segment>
 </net>
 <net name="IN2_N" class="1">
@@ -14543,7 +14539,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-43.18" y1="63.5" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <junction x="-43.18" y="66.04"/>
-<pinref part="J2" gate="G$1" pin="2B"/>
+<pinref part="J1" gate="G$1" pin="2B"/>
 </segment>
 </net>
 <net name="IN3_N" class="1">
@@ -14555,7 +14551,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-53.34" y1="55.88" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <junction x="-53.34" y="45.72"/>
-<pinref part="J2" gate="G$1" pin="3B"/>
+<pinref part="J1" gate="G$1" pin="3B"/>
 </segment>
 </net>
 <net name="IN4_N" class="1">
@@ -14567,7 +14563,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-66.04" y1="7.62" x2="-43.18" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <junction x="-66.04" y="43.18"/>
-<pinref part="J2" gate="G$1" pin="4B"/>
+<pinref part="J1" gate="G$1" pin="4B"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14736,22 +14732,20 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="GRN-1"/>
-<pinref part="J2" gate="G$1" pin="GRN-2"/>
+<pinref part="SUPPLY28" gate="GND" pin="GND"/>
+<wire x1="-93.98" y1="40.64" x2="-99.06" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="48.26" x2="-93.98" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="YEL-"/>
+<junction x="-93.98" y="48.26"/>
+<wire x1="-93.98" y1="55.88" x2="-93.98" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="YEL+"/>
+<wire x1="-93.98" y1="53.34" x2="-93.98" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="71.12" x2="-93.98" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="71.12" x2="-99.06" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="71.12" x2="-99.06" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="YEL-2"/>
-<pinref part="J2" gate="G$1" pin="YEL-1"/>
-<wire x1="-93.98" y1="45.72" x2="-93.98" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="YEL+2"/>
-<wire x1="-93.98" y1="48.26" x2="-93.98" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="YEL+1"/>
-<wire x1="-93.98" y1="53.34" x2="-93.98" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GRN-"/>
 <wire x1="-99.06" y1="53.34" x2="-93.98" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="45.72" x2="-93.98" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY28" gate="GND" pin="GND"/>
-<wire x1="-93.98" y1="40.64" x2="-99.06" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-93.98" y="53.34"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -15175,12 +15169,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="GRN+2"/>
-<pinref part="J2" gate="G$1" pin="GRN+1"/>
-<wire x1="-93.98" y1="63.5" x2="-93.98" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="66.04" x2="-101.6" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="-101.6" y1="66.04" x2="-101.6" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GRN+"/>
 </segment>
 </net>
 </nets>
