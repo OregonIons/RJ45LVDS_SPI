@@ -11,12 +11,12 @@ Power
 
 Board requires 3.3V (max current draw is ~200mA). Two options:
 
-1. Apply regulated 3.3V power to 3.3V pin.  
+1. Apply regulated 3.3V power to the 3.3V pin on either header.  
 or
 2. Apply unregulated power to UNREG pin and enable the regulator by soldering REG_EN jumper.
 
 - The default regulator is a MIC39100-3.3WS which requires an UNREG input voltage between 3.7 and 16V.  [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/mic39100.pdf)
-- When applying unregulated power, the 3.3V pin on the power header becomes an output that can be used to power other things, such as an SPI device. The MIC39100-3.3WS is capable of providing 1A (minus the current required by the board). 
+- When applying unregulated power, the 3.3V pins on the two headers become outputs that can be used to power other things, such as an SPI device. The MIC39100-3.3WS is capable of providing 1A (minus the current required by the board). 
 - Adding the optional resistor R5 makes the green LED on the RJ45 jack act as a power indicator.
 
 
@@ -54,6 +54,12 @@ RJ45 Connector
 Amphenol MRJ-5381-01. See [Datasheet](https://www.amphenolcanada.com/ProductSearch/drawings/AC/MRJ53xxx1.pdf) for panel cutout drawing.
 
 
+Inverter
+========
+
+An optional inverter circuit is provided.  The inverter is an SC70-5 package and is supplied from V_LOGIC.  SN74LVC1GU04 [Datasheet](http://www.ti.com/lit/ds/symlink/sn74lvc1gu04.pdf) is the recommended part as it will work for all supported V_LOGIC voltages (1.8-5V).  Both input and output are wired to a 2-pin 0.1" header  The main envisaged use case is to produce an inverted CS line so that two SPI devices can be driven by the same board.
+
+
 Release Notes
 =============
 
@@ -63,4 +69,5 @@ v0.2 - Second board fab run. Fixed some routing errors that made v0.1 untestable
 
 v0.3 - Changed the RJ45 connector to a right-angled panel-mount version.  Fixed a few silkscreen mistakes.
 
+v0.4 - Fixed a slight error on RJ45 footprint.  Added 3.3V to logic header.  Used nicer solder jumpers.  Added third mounting hole.  Made room so power header could mount on top of board.  Added inverter circuit.
 
