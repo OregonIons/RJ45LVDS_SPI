@@ -71,3 +71,9 @@ v0.3 - Changed the RJ45 connector to a right-angled panel-mount version.  Fixed 
 
 v0.4 - Fixed a slight error on RJ45 footprint.  Added 3.3V to logic header.  Used nicer solder jumpers.  Added third mounting hole.  Made room so power header could mount on top of board.  Added inverter circuit.
 
+
+Things to fix in v1.0
+=====================
+
+- Inverter input and output labeled wrong on silkscreen.
+- Make production files for boardhouse
