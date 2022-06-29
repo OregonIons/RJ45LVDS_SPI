@@ -77,3 +77,9 @@ Things to fix in v1.0
 
 - Inverter input and output labeled wrong on silkscreen.
 - Make production files for boardhouse
+
+
+Licence
+=======
+
+Zero-Clause BSD
